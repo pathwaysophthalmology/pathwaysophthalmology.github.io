@@ -1,14 +1,18 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en-GB" data-theme="apple">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://docs.google.com; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; form-action https://docs.google.com; base-uri 'self'" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Free interactive neuro-ophthalmology course for UK medical students: eye movements, visual fields and pupils, with cases, OSCE stations and a certificate." />
-    <meta name="theme-color" content="#f6f3ec" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <title>Pathways: interactive neuro-ophthalmology course for medical students | eye movements, visual fields, pupils</title>
-    <script type="module" crossorigin src="./assets/index-DTHx7AKe.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Cx_yIl2N.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="./assets/inter-latin-opsz-normal-BwkfbSeq.woff2" />
+    <link rel="modulepreload" crossorigin href="./assets/anatomy-GzsWeWQy.js" />
+    <link rel="preload" as="style" crossorigin href="./assets/anatomy-BDiU7GSH.css" />
+    <script type="module" crossorigin src="./assets/index-uPbLEmq0.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CbEtX7LU.css">
       <meta property="og:type" content="website" />
     <meta property="og:title" content="Pathways: eye movements, visual pathways and pupils" />
     <meta property="og:description" content="A free interactive neuro-ophthalmology course for medical students: eye movements, visual pathway lesions and pupils, with clinical cases, OSCE walkthroughs and a certificate." />
@@ -25,6 +29,7 @@
     <meta property="og:locale" content="en_GB" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://pathwaysophthalmology.github.io/" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,8 +43,9 @@
   "url": "https://pathwaysophthalmology.github.io/",
   "image": "https://pathwaysophthalmology.github.io/og-pathways.png",
   "provider": {
-    "@type": "Person",
-    "name": "Michael Wahba"
+    "@type": "Organization",
+    "name": "Pathways Ophthalmology",
+    "url": "https://pathwaysophthalmology.github.io/"
   },
   "author": {
     "@type": "Person",
@@ -92,24 +98,41 @@
   </head>
   <body>
     <div id="root">
-      <div class="seo-fallback" style="max-width:44rem;margin:0 auto;padding:2rem 1rem;font-family:system-ui,sans-serif;line-height:1.5;color:#1b1f2a">
-        <h1>Pathways: an interactive neuro-ophthalmology course for medical students</h1>
-        <p>Pathways is a free, short online course on eye movements, the visual pathway and the pupils. You move the eye, cut the visual pathway and examine the pupils, so that the anatomy explains the clinical signs.</p>
-        <p>You then use that anatomy to localise lesions in clinical cases and to practise examination stations for the OSCE. A baseline test at the start and a final test at the end show how far you have come, and a certificate is available when you finish.</p>
-        <h2>What the course covers</h2>
-        <ul>
-          <li>Eye movements: the six extraocular muscles, the nine positions of gaze, and third, fourth and sixth cranial nerve palsies</li>
-          <li>The visual pathway: lesions from the optic nerve to the occipital cortex and the visual field defects they cause</li>
-          <li>Pupil reflexes: the pupillary light reflex and the sympathetic pathway to the pupil</li>
-          <li>The abnormal pupil: relative afferent pupillary defect (RAPD), Horner syndrome, Adie pupil and third nerve palsy</li>
-          <li>Clinical cases on localising the lesion</li>
-          <li>OSCE examination stations: eye movements, pupils and visual fields</li>
-          <li>A baseline test and a final test, with every question explained</li>
-          <li>A certificate of completion</li>
-        </ul>
-        <h2>Who it is for</h2>
-        <p>UK medical students revising for finals and the UKMLA or preparing for the Duke Elder Undergraduate Prize Examination, and foundation doctors who want to refresh their neuro-ophthalmology.</p>
-        <p>The course needs JavaScript. If it does not load, please enable JavaScript in your browser.</p>
+      <div class="shell">
+        <header class="shell__bar">
+          <div class="wrap shell__bar-inner">
+            <a href="#/" class="brand" aria-label="Pathways home"><svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--stage)"></rect><circle cx="16" cy="16" r="9" fill="none" stroke="var(--fluor)" stroke-width="2"></circle><circle cx="16" cy="16" r="3.5" fill="var(--fluor)"></circle></svg><span class="brand__name">Pathways</span></a>
+            <nav class="nav" aria-label="Site">
+              <a href="#/" class="nav__home" aria-current="page">Learn</a>
+              <a href="#/about">About</a>
+              <a href="#/feedback"><span class="nav__long">Give feedback</span><span class="nav__short">Feedback</span></a>
+              <a href="#/waitlist"><span class="nav__long">Coming soon</span><span class="nav__short">Waitlist</span></a>
+            </nav>
+          </div>
+        </header>
+        <main class="shell__main">
+          <div class="wrap module-head">
+            <h1>Eye movements, visual pathways and pupils</h1>
+            <p class="module-head__lede">A short neuro-ophthalmology course for finals and the UKMLA. Move the eye, cut the visual pathway and examine the pupils, so that the anatomy explains the signs, then use it to localise lesions in clinical cases and OSCE stations.</p>
+          </div>
+          <div class="wrap prose stack seo-fallback">
+            <p>Pathways is a free, short online course on eye movements, the visual pathway and the pupils. A baseline test at the start and a final test at the end show how far you have come, and a certificate is available when you finish.</p>
+            <h2>What the course covers</h2>
+            <ul>
+              <li>Eye movements: the six extraocular muscles, the nine positions of gaze, and third, fourth and sixth cranial nerve palsies</li>
+              <li>The visual pathway: lesions from the optic nerve to the occipital cortex and the visual field defects they cause</li>
+              <li>Pupil reflexes: the pupillary light reflex and the sympathetic pathway to the pupil</li>
+              <li>The abnormal pupil: relative afferent pupillary defect (RAPD), Horner syndrome, Adie pupil and third nerve palsy</li>
+              <li>Clinical cases on localising the lesion</li>
+              <li>OSCE examination stations: eye movements, pupils and visual fields</li>
+              <li>A baseline test and a final test, with every question explained</li>
+              <li>A certificate of completion</li>
+            </ul>
+            <h2>Who it is for</h2>
+            <p>UK medical students revising for finals and the UKMLA or preparing for the Duke Elder Undergraduate Prize Examination, and foundation doctors who want to refresh their neuro-ophthalmology.</p>
+            <p>The course needs JavaScript. If it does not load, please enable JavaScript in your browser.</p>
+          </div>
+        </main>
       </div>
     </div>
   </body>
